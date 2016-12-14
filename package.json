@@ -4,7 +4,8 @@
   "description": "Crawl stuff from Pitäjänkäki lounch places and serve them from API",
   "main": "fetch-sites.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "fetch": "casperjs fetch-sites.js"
   },
   "repository": {
     "type": "git",
@@ -17,7 +18,16 @@
   },
   "homepage": "https://github.com/sampohaavisto/pitskulounas#readme",
   "devDependencies": {
+    "eslint": "^3.12.1",
+    "eslint-config-airbnb": "^13.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^2.2.3",
+    "eslint-plugin-react": "^6.8.0"
+  },
+  "dependencies": {
     "casperjs": "^1.1.3",
+    "eslint-config-motley": "^6",
+    "fecha": "^2.3.0",
     "phantomjs": "^2.1.7"
   }
 }
